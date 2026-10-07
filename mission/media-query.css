@@ -46,6 +46,17 @@ footer {
     text-align: center;
 }
 
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+          
+
 @media (min-width: 600px)  {
     nav a {
         display: inline;
