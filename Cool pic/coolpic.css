@@ -8,10 +8,12 @@ header {
     background-color: blue;
 }
 
-div {
+.hello {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 20px;
+    margin: 0 auto;
+    display: block;
 }
 
 nav {
@@ -25,6 +27,7 @@ nav {
     
     a {
         color: white;
+        display: none;
     }
 }
 
@@ -52,7 +55,6 @@ main {
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
-
 }
 
 figure {
@@ -80,7 +82,7 @@ footer {
 
 @media (min-width: 800px) {
     .hey {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;    
     }
 
 }
@@ -88,5 +90,13 @@ footer {
 @media (min-width: 1200px) {
     .hey {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav a{
+        display: inline;
+    }
+
+    button {
+        display: none;
     }
 }
