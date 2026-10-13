@@ -24,10 +24,11 @@ nav {
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-direction: column;
     
     a {
         color: white;
-        display: none;
+        display: show;
     }
 }
 
@@ -80,6 +81,14 @@ footer {
     background-color: blue;
 }
 
+dialog img{
+    max-width: 1000px;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (min-width: 800px) {
     .hey {
         grid-template-columns: 1fr 1fr;    
@@ -96,7 +105,19 @@ footer {
         display: inline;
     }
 
-    button {
+    .hello {
         display: none;
     }
+
+    .hidden {
+        display: block;
+        
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
+
