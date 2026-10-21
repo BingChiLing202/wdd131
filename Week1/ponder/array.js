@@ -3,30 +3,30 @@ let courses = ['WDD131', 'ITM220', 'WDD231', 'CES212'];
 console.log(courses[0]);
 console.log(courses[4]);
 
-let coursesAndGPA = ['WDD131', 3.7, 'ITM220', 4];
-console.log(coursesAndGPA[1])
+let courseAndGPA = ['WDD131', 3.7, 'ITM220', 4];
+console.log(courseAndGPA[1])
 
-let courseAndGPA = [
+let coursesAndGPA = [
     {
         courseName: 'WDD131',
         courseGPA: 3.7,
-        professor: 'Brother Warner'
+        professor: 'Brother Warner',
         assignments: [
             {
                 assignmentName: "W01 Prove",
                 assignemtGrade: 89
             }
         ]
-    }
+    },
     {
         courseName: 'Wdd131',
-        courseGPA: 4
+        courseGPA: 4,
         professor: 'Brother Warner'
     }
 ]
 
 // challenge: retrieve the course name for the second item in the array of objects and print to screen
-console.log(courseAndGPA[1].assignments[0].assignmentName);
+console.log(coursesAndGPA[0].assignments[0].assignmentName);
 
 //looping through an array
 for(let i=0; i < coursesAndGPA.length; i++) {
