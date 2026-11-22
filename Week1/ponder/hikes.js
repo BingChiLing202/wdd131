@@ -71,14 +71,15 @@ const hikes = [
     trailhead: [43.78555, -111.98996]
   }
 ];
-       
+
 document.querySelector('#searchButton').addEventListener('click', (e)=> {
     //获取用户的输入内容
     let searchText = document.querySelector('#search').value;
     console.log(searchText);
 
     //search array of objects for matching
-    const filteredHikes = hikes.filter((hike) => {
+    const filteredHikes = hikes.filter((hike) => { //filter（）筛选数组中的元素。括号里的hike代表数组中当前正在被检查的一个元素
+        //filter（）会依次把每个对象传给hike
         return hike.name.toLowerCase()
                         .includes(searchText.toLowerCase());
     })
